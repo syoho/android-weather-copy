@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="qinggu_weather" />  <!--指定数据库名-->
+
+    <version value="1" />    <!--指定数据库版本-->
+
+    <list>    <!--将Province,City,County实体类添加到映射列表-->
+        <mapping class="com.qingguweather.android.db.Province" />
+        <mapping class="com.qingguweather.android.db.City" />
+        <mapping class="com.qingguweather.android.db.County" />
+    </list>
+
+</litepal>
