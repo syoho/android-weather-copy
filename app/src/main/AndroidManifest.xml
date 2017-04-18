@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.qingguweather.android">
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />  <!--可使用网络接口-->
     <application
         android:name="org.litepal.LitePalApplication"
         android:allowBackup="true"

@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.2"
+    buildToolsVersion '24.0.2'
     defaultConfig {
         applicationId "com.qingguweather.android"
         minSdkVersion 14
@@ -19,11 +19,15 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'org.litepal.android:core:1.3.2' //对数据进行操作的库
-    compile 'com.squareup.okhttp3:okhttp:3.4.1' //进行网络请求
-    compile 'com.google.code.gson:gson:2.7'//解析JSON数据
-    compile 'com.github.bumptech.glide:glide:3.7.0'//加载和展示图片
+    compile 'org.litepal.android:core:1.3.2'
+    //对数据进行操作的库
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    //进行网络请求
+    compile 'com.google.code.gson:gson:2.7'
+    //解析JSON数据
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //加载和展示图片
 }
